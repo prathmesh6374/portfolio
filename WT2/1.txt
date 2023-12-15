@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Resume</title>
+	<style type="text/css">
+		.main{
+			border: 2px solid black;
+			height: 1690px;
+			width: 1000px;
+			float: left;
+
+
+		
+			
+		}
+		.col1{
+			float: left;
+			border: 2px solid black;
+			height: 1690px;
+			width: 700px;
+			margin-top: 1px;
+			background-color: #FEFCFF;
+		}
+		.col2{
+			border: 2px solid skyblue;
+			height: 1690px;
+			width: 290px;
+			float: right;
+			background-color: rgb(72, 99, 160);
+		}
+		.main{
+			margin-left:500px ;
+
+
+
+		}
+		.heading{
+			font-size: 32px;
+			margin-left: 8px;
+
+		}
+		.image{
+			margin-left: 85px;
+		}
+	</style>
+</head>
+<body>
+	
+<div class="main"> 
+<div class="col1">
+	<br>
+<font size="10px">	<b>PRATHMESH TIWARI</b></font>
+<br>
+<br><b><font size="6px" color="sky blue" > BCA Fresher</b></font>  
+<br>
+<font size="5px">Phone NO:+91-9669687708  &nbsp;
+
+
+
+ Gmail:tiwariprathmesh16@gmail.com
+ <br>
+
+16/02/2002
+ 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+Nashik,Maharashtra
+</font>
+<br>
+<br>
+<br>
+<font class="heading"><b>SUMMARY</b></font>
+<br>
+
+<hr>
+<font size="5px">
+<p style="text-align: justify-all; margin-left: 3px;">
+This is prathmesh Tiwari persued Undergraduate degree In <b>BCA(Bachelor of Computer
+Applications)</b> with a <b>SGPA</b> of <b>8.8</b>. A part from this I exposed to various Programming
+languages During my graduation which i had described below. I always used to have curiosity
+about the latest technologies arrived in the market.
+</p>
+<font>
+	
+	<br>
+	<font class="heading"><b>INTERNSHIP</b></font>
+	<hr>
+	<p style="text-align: justify-all; margin-left: 3px;">
+		CYBER SECURITY & ETHICAL HACKING	
+		<br>
+		<font color=" sky blue" size="5px">Microsoft</font>
+		<br>
+		Company Description
+		<br>
+		<ul type="disc">
+			<li>Had Successfully Undergone a Summer Tranning & Internship of 6 Weeks on
+CYBER SECURITY AN ETHICAL HACKING Along With A Project Of Mr: Robot.</li>
+</ul>
+<br>
+<font class="heading"><b>PROGRAMMING SKILLS</b></font>
+<hr>
+java(j2se) :&nbsp;java(j2ee):&nbsp; SQL:&nbsp; python:&nbsp; cpp :&nbsp;Linux
+<br>
+<br>
+<br>
+<font class="heading"><b>EDUCATION</b></font>
+<hr>
+HSC(Higher Secondary Certificate) - CBSE
+&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+06/2019 - 07/2020
+<br>
+<font color=" sky blue" size="5px">Kendriya Vidalaya</font>
+<ul type="disc">
+	<li>Completed 12th from kendriya vidalaya ,Burhanpur,Madhya Pradesh.
+Marks 86/100</li>
+
+
+
+</ul>
+<font size="5px">BCA(Bachelor Of Computer Application)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08/2020 - 06/2023
+<br>
+<font color=" sky blue" size="5px">K.K.Wagh Arts Commerce & Science,Nashik </font>
+<br><ul type="disc">
+	<li>Successfully Completed BCA Science With 83.5 Percentage
+Cgpa 8.8/10
+</li>
+</ul>
+<br>
+<font class="heading"><b>ACHIEVEMENTS</b></font>
+<hr>
+<ul type="disc">
+	<li>PYTHON</li>
+	<ul type="CIRCLE">
+	<li type="CIRCLE"><a href="https://coursera.org/share/18bcc4be94db2d54598f4ed87dd00831
+">ttps://coursera.org/share/18bcc4be94db2d54598f4ed87dd00831
+
+</a></li>
+</ul>
+<li>Red Hat Linux</li>
+<ul type="circle"><li><a href="
+
+https://coursera.org/share/c07448824b356bd000d7ba5fbaa22532">https://coursera.org/share/c07448824b356bd000d7ba5fbaa22532</a></li></ul>
+</ul>
+
+	
+
+	</p>
+</div>
+<div class="col2">
+	<br>
+	<img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/profile-picture-3593268-3001259.png?f=avif&w=512" height="111px" width="111px" align="center" class="image">
+	<br>
+	<br>
+	<hr>
+	<font color="white" size=6>
+		<center>STRENGTH</center>
+	
+	</font>
+    <hr>
+
+    <font color="white" size="6" align="left">
+<ul type="disc" align="left">
+	<li>Active Listener</li>
+	<li>Leadership </li>
+	<li>logical Thinking</li>
+	<li>Teamwork</li>
+</ul>
+<hr>
+<center>Languages Known</center>
+
+
+<hr>
+<center>
+Python
+<meter min="0" max="100" value="90" align="left"></meter>
+
+Cpp <meter min="0" max="100" value="87" align="left"></meter>
+<br>
+Java
+<meter min="0" max="100" value="58" align="right"></meter>
+<br>
+Oops
+<meter min="0" max="100" value="76" align="left" ></meter>
+<hr>
+Passion
+<hr>
+To be a Data Analyst
+</font>
+</center>
+
+	
+</div>
+</div>
+
+</body>
+</html>

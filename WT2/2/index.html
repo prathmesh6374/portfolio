@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">
+       function validate() {
+       
+       var fullname =document.myform.fullname.value;
+       if(fullname=="" ){
+       	alert("required filed");
+       	alert("greater then 6 character");
+
+       	return false;
+       }
+       else
+       {
+       	return true;
+       }
+       var email=document.myform.email.value;
+       if(email =="")
+       	{
+       		alert("email is necessory");
+       		return false;
+       	}
+       	var phone=document.myform.phone.value;
+       if(phone =="")
+       	{
+       		alert("phone number is necessory");
+       		return false;
+       	}
+       }
+    </script>
+  </head>
+  <body>
+    <section class="container">
+      <header>Registration Form</header>
+      <form action="#" class="form" name="myform">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" name="fullname" />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter email address" 
+          name="email" />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number"  name="phone">
+          </div>
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter birth date" >
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">prefer not to say</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" placeholder="Enter street address" >
+          <input type="text" placeholder="Enter street address line 2" >
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Country</option>
+                <option>America</option>
+                <option>Japan</option>
+                <option>India</option>
+                <option>Nepal</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Enter your city" >
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Enter your region" >
+            <input type="number" placeholder="Enter postal code" >
+          </div>
+        </div>
+        <button onclick="return validate()">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
