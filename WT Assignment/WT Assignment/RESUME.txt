@@ -1,0 +1,85 @@
+Write an HTML code to display your CV on a web page
+
+<html>
+<head>
+    <title>Resume</title>
+</head>
+<body>
+    
+	<header>
+       <h1 style="background-color:lavender;" align="center">RESUME</h1>
+        <h2>OMKAR RAJENDRA PENDHARKAR</h2>
+        <p>Software Developer</p>
+    </header>
+	
+	<font color="black"><h2 style="background-color:lavender;"><u>  SUMMARY</u></h2></font>
+	<p style="font-size:20px">Results-driven software developer with over 5 years of experience in designing and developing robust and efficient software solutions. Proficient in multiple programming languages and experienced in full-stack development. Strong problem-solving and team collaboration skills.</p>	
+	
+	
+	<font color="black"><h2 style="background-color:lavender;"><u>  CONTACT</u></h2></font>
+	        <ul style="font-size:20px">
+                <li>Email: omkarpendharkar1@gmail.com</li>
+                <li>Phone:9325013700 </li>
+                <li>Website: <a >www.xyz.com</a></li>
+                <li>LinkedIn: <a>www.linkedin.com/in/yourname</a></li>
+            </ul>
+	
+    
+    <font color="black"><h2 style="background-color:lavender;" ><u>EDUCATIONAL QUALIFICATIONS</u></h2></font>
+            <table border="1">
+                <tr id="heading" bgcolor="silver" style="font-size:20px">
+                    <td><strong>Qualification</strong></td>
+                    <td><strong>Board</strong></td>
+                    <td><strong>Percentage / Grades</strong></td>
+                    <td><strong>Year</strong></td>
+					
+                </tr>
+				<tr>
+                    <td>MCA</td>
+                    <td>K.K. WAGH INSTITUTE OF ENGINEERING EDUCATION AND RESEARCH, NASHIK</td>
+                    <td>APPEARING</td>
+                    <td>2023</td>
+                </tr>
+				<tr>
+                    <td>BBA(CA)</td>
+                    <td>N.V.P. MANDAL'S ARTS, SCIENCE & COMMERCE COLLEGE LASALGAON</td>
+                    <td>70.40%/A Grade</td>
+                    <td>2023</td>
+                </tr>
+				<tr>
+                    <td>H.S.C </td>
+                    <td>MAHARASHTRA</td>
+					<td>58.31%</td>
+                    <td>2020</td>
+                </tr>
+                
+                <tr>
+                    <td>S.S.C</td>
+                    <td>MAHARASHTRA</td>
+                    <td>78.40%</td>
+                    <td>2018</td>
+                </tr>
+                
+                
+                </table>
+				<font color="black"><h2 style="background-color:lavender;"><u>TECHNICAL SKILLS</u></h2></font>
+               <ul style="font-size:17px">
+                     <li>  C Programming</li>
+                     <li>  C++</li>
+                     <li>  Python</li>
+                     <li>  Java</li>
+		             <li>  HTML</li>
+               </ul>
+	
+	<font color="black"><h2 style="background-color:lavender;"> <u> COURSES</u></h2></font>
+	    
+		<li>    C programming in Hindi</li>
+	    <li> Python</li>
+		<li> Google Digital Marketing</li>
+	    
+	<font color="black"><h2 style="background-color:lavender;"> <u> PROJECTS</u></h2></font>
+	    <li>  Library Management System</li>
+        
+	
+</body>
+</html>

@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Registration form with validation</title>
+</head>
+<body bgcolor="#9DF9EF">
+<script>
+function mydata()
+{
+ var f=document.getElementById("fn").value;
+ var l=document.getElementById("ln").value;
+ var a=document.getElementById("ad").value;
+ var e=document.getElementById("em").value;
+ var m=document.getElementById("mb").value;
+ var p=document.getElementById("ps").value;
+ var cp=document.getElementById("cp2").value;
+ 
+ if(f=="" || l==""||a==""||e==""||m==""||p==""||cp=="")
+ {
+     alert("all fields are mandatory");
+     return false;
+ }
+ else if(p.length<8||p.length>8)
+ {
+     alert("Password length is set to 8 digits !");
+     return false;
+ }
+ else if(m.length<10||m.length>10)
+ {
+     alert("Number should be 10 digits");
+     return false;
+ }
+ else if(isNaN(m))
+ {
+     alert("Only Number are allowed! Please Enter valid Number");
+     return false;
+ }
+ else if(p!=cp)
+ {
+    alert("Password did not match");
+	return false;
+ }
+ else if((e.charAt(e.length-4)!='.')&&(e.charAt(e.length-3)!='.'))
+ {
+    alert("Invalid E-mail ! please enter valid email");
+    return false;
+ }
+ else
+ {
+    true;
+ }
+alert("Registration Successfully Completed");
+}
+</script>
+<form onsubmit="mydata()"action="abc.html">
+<fieldset>
+       <style rel="stylesheet" type="text/css" media="screen">
+        fieldset
+	   {
+          background-color:#EDF7F6;
+	      border:3px solid #ccc;
+		  border-color:black;
+	      margin:2em 0;
+	      padding:1em;
+	   }
+	   </style>
+<center>
+<table>
+<h2> Registration Form</h2>
+<tr>
+<td><label>First Name:</label></td>
+<td><input type="text"id="fn"placeholder="Enter First Name"></td>
+</tr>
+</br></br>
+<tr>
+<td><label>Last Name:</label></td>
+<td><input type="text"id="ln"placeholder="Enter Last Name"/></td>
+<tr></br>
+<td> <label> Address:</label></td>
+<td><input type="text" id="ad" placeholder="Enter Address"/></td>
+</tr>
+<tr>
+<td><label>E-mail ID:</label></td>
+<td><input type="text"id="em"placeholder="Enter Email Address"/></td>
+</tr>
+<tr>
+<td> <label>Mobile NO:</label></td>
+<td><input type"text" id="mb" placeholder="Enter Mobile Number"/></td>
+</tr>
+<tr>
+<td><label> Password:</label>
+<td> <input type="text" id="ps" placeholder="Enter Password"></td>
+</tr>
+<tr>
+<td><label>Confirm Password:</label>
+<td><input type="text" id="cp2" placeholder="Confirm Password">
+</table>
+<br>
+
+<input type="button" value="create" onclick="mydata()">&nbsp;&nbsp;
+
+<input type="button"value="reset">
+</center>
+</fieldset>
+</form>
+</body>
+</html>

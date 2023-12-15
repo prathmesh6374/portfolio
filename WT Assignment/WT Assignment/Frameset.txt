@@ -1,0 +1,221 @@
+Design the following static web pages required for an online book store web site
+1) HOME PAGE: The static home page must contain three frames
+2) LOGIN PAGE
+3) CATOLOGUE PAGE: The catalogue page should contain the details of all the
+books available in the web site in a table
+4) REGISTRATION PAGE
+
+main.html
+
+<html>
+<head>
+<title>Frameset</title>
+</head>
+  <frameset rows="15%,*">
+  <frame src="heading.html"/>
+  <frameset cols="35%,*,25%">
+  <frame src="registration.html" name="leftFrame">
+  <frame src="catalogue.html" name="middleFrame">
+  <frame src="login.html" name="rightFrame">
+ </frameset>
+ </html>
+
+
+login.html
+
+<html>
+<head>
+    <title>Login - Online Bookstore</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Login Page</h1>
+    </header>
+    <main align="center">
+        <form action="login.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            
+			<div align="center">
+            <button type="submit">Login</button>
+			</div>
+        </form>
+    </main>
+    
+</body>
+
+
+catalogue.html
+
+<div><h1 align="center">Available Books</h1></div>
+<div>
+	
+	<table border="2px" bordercolor="black">
+		<thead></thead>
+<tr>
+		<th> Sr No.</th>
+		<th> Books Name</th>
+       <th> Author</th>
+         <th> Publication/Edition</th>
+</tr>
+
+<body>
+	        <tr>
+                <td>1.</td>
+                <td>Discrete Mathematics</td>
+                <td>Sriram P & Steven S</td>
+                <td>Cambridge University Press</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td> Data Structures and Algorithms</td>
+                <td> J. Hopcroft</td>
+                <td>Pearson Education</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td> Data Communication and Network</td>
+                <td>Kurose, Ross</td>
+                <td>Pearson Education</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Web Technology</td>
+                <td> Ralph Moseley </td>
+                <td>Wiley publications</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Software Engineering</td>
+                <td>Waman S. Jawadekar</td>
+                <td>Tata McGraw Hill Education</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Python Programming</td>
+                <td>Kenneth A. Lambert</td>
+                <td>Cengage Learning</td>
+            </tr>
+             <tr>
+                <td>7.</td>
+                <td> Business Communication</td>
+                <td> John Collin</td>
+                <td> Video Arts MARSHAL</td>
+            </tr>
+             <tr>
+                <td>8.</td>
+                <td> Object Oriented Programming</td>
+                <td>Robert Lafore</td>
+                <td>Sams Publishing</td>
+            </tr>
+             <tr>
+                <td>9.</td>
+                <td>Database Management System</td>
+                <td> Elmasri R.</td>
+                <td>Pearson Education</td>
+            </tr>
+             <tr>
+                <td>10.</td>
+                <td> Artificial Intelligence </td>
+                <td> Elaine Rich</td>
+                <td>TMH</td>
+            </tr><br>
+</body>
+	</table>
+</div>
+
+
+registration.html
+
+
+
+<html>
+<head>
+    <title>Registration form</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Registration form</h1>
+    </header>
+    <main.>
+        <form action="register.php" method="POST">
+		
+		    <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+			<label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+			
+			<label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+			
+			<label for="mob">Mobile No.:</label>
+            <input type="mobile" id="mobile" name="mobile" required><br><br>
+			
+			<label for="gender">Gender:</label>
+            <input type="gender" id="gender" name="gender" required><br><br>
+			
+			<div>
+	           <label for="radio">gender:</label>
+
+	           <input type="radio" id="male" name="gender" value="male">
+	           <label for="male"> Male</label>
+
+		       <input type="radio" id="female" name="gender" value="female">
+	           <label for="female"> Female</label>
+	           
+           </div><br>
+			
+			<form>
+	            <label for="address">Address:</label>
+	            <textarea id="address" name="address"></textarea>
+            </form><br>
+			
+			<div>
+	           <label for="course"> Course: </label>
+	           <select name="dropdown" > 
+	           <option value="MCA"> MCA</option>
+	           <option value="MBA"> MBA</option>
+	           <option value="BCA"> BCA</option>
+	           </select>
+            </div><br>
+			
+			<div>
+	           <label for="book type"> Book type:</label>
+               <input type="radio" id="Web Technolgy" name="Web Technolgy " value="accepted"> Web Technolgy
+               <input type="radio" id="Computer Networking" name="Computer Networking" value="accepted"> Computer Networking
+	           <input type="radio" id="Mathematics" name="Mathematics" value="accepted"> Mathematics
+	           <input type="radio" id="Buisness Communication" name="Buisness Communication" value="accepted">Buisness Communication
+			   <input type="radio" id="othre" name="other" value="accepted">other
+			 </div><br><br>
+			<button type="submit">Register</button>&nbsp;&nbsp;&nbsp;<button type="submit">Cancel</button>
+        </form>
+    </main>
+</body>
+</html>
+
+
+
+heading.html
+
+
+
+<div align="center"><h1><U>BOOK STORE</U></h1></div>
+<div>
+<span>
+	<a href="#"> Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="#">Best sellers</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="#">Contact</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="#">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="#">Feedback</a>
+</span>
+</div>

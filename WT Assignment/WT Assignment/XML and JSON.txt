@@ -1,0 +1,227 @@
+Write a program to design Cricket Scorecard website (Live score display) using
+XML AND JSON
+
+XML
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Scorecard>
+    <Team>
+        <Name>India</Name>
+        <Players>
+            <Player>
+                <Name>Virat Kohli</Name>
+                <Role>Batsman</Role>
+                <Score>80</Score>
+            </Player>
+            <Player>
+                <Name>Rohit Sharma</Name>
+                <Role>Batsman</Role>
+                <Score>60</Score>
+            </Player>
+           <Player>
+                <Name>Shubham gill</Name>
+                <Role>Batsman</Role>
+                <Score>50</Score>
+            </Player>
+			<Player>
+                <Name>Hardik Pandya</Name>
+                <Role>Batsman</Role>
+                <Score>70</Score>
+            </Player>
+			<Player>
+                <Name>Shreyas Iyer</Name>
+                <Role>Boller</Role>
+                <Score>50</Score>
+            </Player>
+			<Player>
+                <Name>Kuldeep Yadav</Name>
+                <Role>Batsman</Role>
+                <Score>30</Score>
+            </Player>
+			<Player>
+                <Name>Ravinchandra Ashwin</Name>
+                <Role>Boller</Role>
+                <Score>65</Score>
+            </Player>
+			<Player>
+                <Name>Ishan Kishan</Name>
+                <Role>Batsman</Role>
+                <Score>40</Score>
+            </Player>
+			<Player>
+                <Name>Jasprit Bumrah</Name>
+                <Role>Boller</Role>
+                <Score>76</Score>
+            </Player>
+			<Player>
+                <Name>Ravindra Jadeja</Name>
+                <Role>Batsman</Role>
+                <Score>67</Score>
+            </Player>
+			<Player>
+                <Name>Suryakumar Yadav</Name>
+                <Role>Batsman</Role>
+                <Score>78</Score>
+            </Player>
+        </Players>
+    </Team>
+    <Team>
+        <Name>Australia</Name>
+        <Players>
+             <Player>
+                <Name>Tom Armitage</Name>
+                <Role>Batsman</Role>
+                <Score>80</Score>
+            </Player>
+            <Player>
+                <Name>Henry Charniwood</Name>
+                <Role>Batsman</Role>
+                <Score>60</Score>
+            </Player>
+           <Player>
+                <Name>Tom Emmott</Name>
+                <Role>Batsman</Role>
+                <Score>50</Score>
+            </Player>
+			<Player>
+                <Name>Andrew Greenwood</Name>
+                <Role>Batsman</Role>
+                <Score>70</Score>
+            </Player>
+			<Player>
+                <Name>Bill Athey</Name>
+                <Role>Boller</Role>
+                <Score>50</Score>
+            </Player>
+			<Player>
+                <Name>Alen Hill</Name>
+                <Role>Batsman</Role>
+                <Score>30</Score>
+            </Player>
+			<Player>
+                <Name>Derek Pringle</Name>
+                <Role>Boller</Role>
+                <Score>65</Score>
+            </Player>
+			<Player>
+                <Name>Harry Jupp</Name>
+                <Role>Batsman</Role>
+                <Score>40</Score>
+            </Player>
+			<Player>
+                <Name>Paul Downtown</Name>
+                <Role>Boller</Role>
+                <Score>76</Score>
+            </Player>
+			<Player>
+                <Name>Geoff Cook</Name>
+                <Role>Batsman</Role>
+                <Score>67</Score>
+            </Player>
+			<Player>
+                <Name>Paul Allott</Name>
+                <Role>Batsman</Role>
+                <Score>78</Score>
+            </Player>
+        </Players>
+    </Team>
+</Scorecard>
+
+
+
+JSON
+
+
+
+{
+    "scorecard": {
+        "match": [
+            {
+                "Date": "21-sep-2020",
+                "umpires": {
+                    "umpire": ["CV Altman", "CV Rodrigues"]
+                },
+                "Match Name": "One Day",
+                "over": "50-50",
+                "target": "330",
+                "players": [
+                    {
+                        "Team Name": "India",
+                        "player_name": [
+                            "Shubman Gill",
+                            "Virat Kohli",
+                            "Rohit Sharma",
+                            "Ravindra Jadeja",
+                            "Hardik Pandya",
+                            "Ravichandran Ashwin",
+                            "Kuldeep Yadav",
+                            "Suryakumar Yadav",
+                            "Jasprit Bumrah",
+                            "Shreyas Iyer",
+                            " Ishan Kishan"
+                        ]
+                    },
+                    {
+                        "Team": "America",
+                        "player_name": [
+                            "Tom Armitage",
+                            "Henry Charlwood",
+                            "Tom Emmott",
+                            "Andrew Greenwood",
+                            "Allen Hill",
+                            "Harry Jupp",
+                            "Bill Athey",
+                            "Paul Downton ",
+                            "Paul Allott",
+                            "Geoff Cook",
+                            "Derek Pringle"
+                        ]
+                    }
+                ]
+            },
+            {
+                "Dates": "24-Jun-2021",
+                "umpires": {
+                    "umpire": ["WR Knights", "Ram Shasri"]
+                },
+                "match_name": "Test",
+                "over": "No Limit",
+                "target": "Running",
+                "players": [
+                    {
+                        "Team": "India",
+                        "player_name": [
+                            "Shubman Gill",
+                            "Virat Kohli",
+                            "Rohit Sharma",
+                            "Ravindra Jadeja",
+                            "Hardik Pandya",
+                            "Ravichandran Ashwin",
+                            "Kuldeep Yadav",
+                            "Suryakumar Yadav",
+                            "Jasprit Bumrah",
+                            "Shreyas Iyer",
+                            "Ishan Kishan"
+                        ]
+                    },
+                    {
+                        "Team": "Pakistan",
+                        "player_name": [
+                            "Babber Azam",
+                            "Fakhar Zaman",
+                            "Shadab Khan",
+                            "Shahid Afridi",
+                            "Shaheen Shah Afridi",
+                            "Shoaib Malik",
+                            "Imad Wasim",
+                            "Imran Khan",
+                            "Hasan Ali",
+                            "Grant Bradburn",
+                            "Aggan Kureshi"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

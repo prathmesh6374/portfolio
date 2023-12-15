@@ -1,0 +1,24 @@
+
+<html lang="en" ng-app="timerApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Timer App</title>
+    <link rel="stylesheet" href="A6.css">
+</head>
+<body>
+
+<div ng-controller="TimerController as timerCtrl">
+    <h1>Timer App</h1>
+    <div class="timer">
+        <span>{{ timerCtrl.displayTime }}</span>
+    </div>
+    <button ng-click="timerCtrl.startTimer()" ng-disabled="timerCtrl.isRunning">Start</button>
+    <button ng-click="timerCtrl.stopTimer()" ng-disabled="!timerCtrl.isRunning">Stop</button>
+    <button ng-click="timerCtrl.resetTimer()">Reset</button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="A6.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+
+{
+    "scorecard": {
+        "match": [
+            {
+                "Date": "21-sep-2020",
+                "umpires": {
+                    "umpire": ["CV Altman", "CV Rodrigues"]
+                },
+                "Match Name": "One Day",
+                "over": "50-50",
+                "target": "330",
+                "players": [
+                    {
+                        "Team Name": "India",
+                        "player_name": [
+                            "Shubman Gill",
+                            "Virat Kohli",
+                            "Rohit Sharma",
+                            "Ravindra Jadeja",
+                            "Hardik Pandya",
+                            "Ravichandran Ashwin",
+                            "Kuldeep Yadav",
+                            "Suryakumar Yadav",
+                            "Jasprit Bumrah",
+                            "Shreyas Iyer",
+                            " Ishan Kishan"
+                        ]
+                    },
+                    {
+                        "Team": "America",
+                        "player_name": [
+                            "Tom Armitage",
+                            "Henry Charlwood",
+                            "Tom Emmott",
+                            "Andrew Greenwood",
+                            "Allen Hill",
+                            "Harry Jupp",
+                            "Bill Athey",
+                            "Paul Downton ",
+                            "Paul Allott",
+                            "Geoff Cook",
+                            "Derek Pringle"
+                        ]
+                    }
+                ]
+            },
+            {
+                "Dates": "24-Jun-2021",
+                "umpires": {
+                    "umpire": ["WR Knights", "Ram Shasri"]
+                },
+                "match_name": "Test",
+                "over": "No Limit",
+                "target": "Running",
+                "players": [
+                    {
+                        "Team": "India",
+                        "player_name": [
+                            "Shubman Gill",
+                            "Virat Kohli",
+                            "Rohit Sharma",
+                            "Ravindra Jadeja",
+                            "Hardik Pandya",
+                            "Ravichandran Ashwin",
+                            "Kuldeep Yadav",
+                            "Suryakumar Yadav",
+                            "Jasprit Bumrah",
+                            "Shreyas Iyer",
+                            "Ishan Kishan"
+                        ]
+                    },
+                    {
+                        "Team": "Pakistan",
+                        "player_name": [
+                            "Babber Azam",
+                            "Fakhar Zaman",
+                            "Shadab Khan",
+                            "Shahid Afridi",
+                            "Shaheen Shah Afridi",
+                            "Shoaib Malik",
+                            "Imad Wasim",
+                            "Imran Khan",
+                            "Hasan Ali",
+                            "Grant Bradburn",
+                            "Aggan Kureshi"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

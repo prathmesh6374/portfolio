@@ -1,0 +1,97 @@
+
+timer.html
+
+
+<html lang="en" ng-app="timerApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Timer App</title>
+    <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+
+<div ng-controller="TimerController as timerCtrl">
+    <h1>Timer App</h1>
+    <div class="timer">
+        <span>{{ timerCtrl.displayTime }}</span>
+    </div>
+    <button ng-click="timerCtrl.startTimer()" ng-disabled="timerCtrl.isRunning">Start</button>
+    <button ng-click="timerCtrl.stopTimer()" ng-disabled="!timerCtrl.isRunning">Stop</button>
+    <button ng-click="timerCtrl.resetTimer()">Reset</button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="timer.js"></script>
+</body>
+</html>
+
+timer.css
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.timer {
+    font-size: 2em;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+button {
+    font-size: 1em;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+timer.js
+
+
+angular.module('timerApp', [])
+    .controller('TimerController', ['$interval', function ($interval) {
+        var vm = this;
+        vm.displayTime = '00:00:00';
+        vm.isRunning = false;
+        var timer;
+
+        function updateDisplay() {
+            var seconds = vm.totalSeconds % 60;
+            var minutes = Math.floor((vm.totalSeconds / 60) % 60);
+            var hours = Math.floor(vm.totalSeconds / 3600);
+
+            vm.displayTime = pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
+        }
+
+        function pad(number) {
+            return (number < 10 ? '0' : '') + number;
+        }
+
+        vm.startTimer = function () {
+            if (!vm.isRunning) {
+                vm.totalSeconds = 0;
+                timer = $interval(function () {
+                    vm.totalSeconds++;
+                    updateDisplay();
+                }, 1000);
+                vm.isRunning = true;
+            }
+        };
+
+        vm.stopTimer = function () {
+            if (vm.isRunning) {
+                $interval.cancel(timer);
+                vm.isRunning = false;
+            }
+        };
+
+        vm.resetTimer = function () {
+            vm.totalSeconds = 0;
+            updateDisplay();
+        };
+    }]);
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+function calculateBill($units) {
+    $rate1 = 3.50;
+    $rate2 = 4.00;
+    $rate3 = 5.20;
+    $rate4 = 6.50;
+    $unitLimit1 = 50;
+    $unitLimit2 = 150;
+    $unitLimit3 = 250;
+
+    $bill = 0;
+
+    if ($units <= $unitLimit1) {
+        $bill += $units * $rate1;
+    } else if ($units <= $unitLimit2) {
+        $bill += $unitLimit1 * $rate1;
+        $bill += ($units - $unitLimit1) * $rate2;
+    } else if ($units <= $unitLimit3) {
+        $bill += $unitLimit1 * $rate1;
+        $bill += ($unitLimit2 - $unitLimit1) * $rate2;
+        $bill += ($units - $unitLimit2) * $rate3;
+    } else {
+        $bill += $unitLimit1 * $rate1;
+        $bill += ($unitLimit2 - $unitLimit1) * $rate2;
+        $bill += ($unitLimit3 - $unitLimit2) * $rate3;
+        $bill += ($units - $unitLimit3) * $rate4;
+    }
+
+    return $bill;
+}
+
+// get the bill amount
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ $units = test_input($_POST["units"]);
+ if (!is_numeric($units)) {
+    echo "<div class='error'>Units consumed must be a number.</div>";
+ } else {
+    $bill = calculateBill($units);
+    echo "Electricity bill for $units units is: Rs. $bill";
+ }
+}
+
+function test_input($data) {
+ $data = trim($data);
+ $data = stripslashes($data);
+ $data = htmlspecialchars($data);
+ return $data;
+}
+?>
+
+<h2>Electricity Bill Calculator</h2>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+ Units consumed: <input type="text" name="units">
+ <input type="submit" name="submit" value="Calculate">
+</form>
+
+</body>
+</html>
